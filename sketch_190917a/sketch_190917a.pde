@@ -27,7 +27,7 @@ void draw(){
 void checkCatch(int x){
   if(x > mouseX && x<mouseX+70 && yDrop > 795)
     score++;
-  else if (score > 0 && yDrop == 0)
+  else if (score > 0 && yDrop == 0 )
     score--;
   println("Your score is now: " + score);
 }

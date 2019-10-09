@@ -6,7 +6,7 @@ int xPaddle;
 int yPaddle = 450;
 int paddleLength = 100;
 PImage backgroundImage;
-//import ddf.minim.*;
+import ddf.minim.*;
 //Minim minim;
 //AudioSample sound;
 void setup(){
@@ -39,6 +39,7 @@ xBall = xBall + xSpeed;
   if(yBall < height){
   yBall = yBall + ySpeed;
   }
+
   if(yBall > yPaddle + 22){
   ySpeed = 0;
   xSpeed = 0;
@@ -53,4 +54,11 @@ xBall = xBall + xSpeed;
   yBall = yBall+ySpeed;
   }
   
+  //boolean intersects(int xBall, yBall, int xPaddle, int yPaddle, int paddleLength) {
+   //if(yBall > yPaddle && xBall > xPaddle && xBall < xPaddle + paddleLength)
+   //   return true;
+    //else
+    //  return false;
+  
+ //}
 }
